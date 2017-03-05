@@ -13,7 +13,7 @@ public class ADB {
     public ADB(String deviceID){ID = deviceID;}
 
     public static String command(String command){
-    	System.out.println("Test2");
+    	System.out.println("Test3");
         MyLogger.log.debug("Formatting ADB Command: "+command);
         if(command.startsWith("adb")) command = command.replace("adb ", ServerManager.getAndroidHome()+"/platform-tools/adb ");
         else throw new RuntimeException("This method is designed to run ADB commands only!");
